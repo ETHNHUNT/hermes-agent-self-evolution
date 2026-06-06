@@ -70,3 +70,61 @@ def get_hermes_agent_path() -> Path:
         "Cannot find hermes-agent repo. Set HERMES_AGENT_REPO env var "
         "or ensure it exists at ~/.hermes/hermes-agent"
     )
+
+
+def setup_dspy_lm(model_name: str):
+    """Configures DSPy to use the specified model.
+
+    Supports:
+      - Gemini models (e.g. gemini-3.5-flash, antigravity-preview-05-2026) via gemini/ or google/ prefix
+      - OpenRouter models (e.g. openrouter/anthropic/claude-3-opus) via openrouter/ prefix
+      - OpenCode Zen models (e.g. minimax-m3-free) via openai/ prefix or by default
+    """
+    import os
+    import dspy
+    from pathlib import Path
+    from dotenv import load_dotenv
+
+    # Load keys
+    load_dotenv(Path.home() / ".hermes" / ".env")
+
+    if model_name.startswith("gemini/") or model_name.startswith("google/"):
+        # Normalize to gemini/ for LiteLLM
+        model_id = model_name
+        if model_name.startswith("google/"):
+            model_id = "gemini/" + model_name[7:]
+
+        # Ensure GEMINI_API_KEY is populated from GOOGLE_API_KEY if needed
+        if not os.environ.get("GEMINI_API_KEY"):
+            os.environ["GEMINI_API_KEY"] = os.environ.get("GOOGLE_API_KEY", "")
+
+        lm = dspy.LM(model_id)
+        
+    elif model_name.startswith("openrouter/"):
+        # Extract the model identifier
+        model_id = model_name[11:]
+        # LiteLLM routes to openrouter via openrouter/ prefix or base_url config
+        lm = dspy.LM(
+            model=f"openrouter/{model_id}",
+            api_key=os.environ.get("OPENROUTER_API_KEY", ""),
+            base_url="https://openrouter.ai/api/v1",
+        )
+        
+    else:
+        # Default to OpenCode Zen
+        zen_api_key = os.environ.get("OPENCODE_ZEN_API_KEY", "")
+        zen_base_url = "https://opencode.ai/zen/v1"
+
+        model_id = model_name
+        if not (model_name.startswith("openai/") or "/" in model_name):
+            model_id = f"openai/{model_name}"
+
+        lm = dspy.LM(
+            model=model_id,
+            api_key=zen_api_key,
+            base_url=zen_base_url,
+        )
+
+    dspy.configure(lm=lm)
+    return lm
+

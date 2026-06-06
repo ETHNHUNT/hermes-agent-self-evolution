@@ -122,8 +122,11 @@ class SyntheticDatasetBuilder:
 
         n = num_cases or self.config.eval_dataset_size
 
-        # Configure DSPy to use the judge model for generation
-        lm = dspy.LM(self.config.judge_model)
+        # Use the globally configured LM (which has API key)
+        # instead of creating a new one without credentials
+        lm = dspy.settings.lm
+        if lm is None:
+            lm = dspy.LM(self.config.judge_model)
 
         with dspy.context(lm=lm):
             result = self.generator(
