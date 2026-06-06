@@ -104,7 +104,7 @@ from evolution.tools.evolve_tool_descriptions import extract_tool_descriptions  
 if len(sys.argv) > 1:
     dataset_path = Path(sys.argv[1])
 else:
-    dataset_path = Path("datasets/tools/devtools_v1.jsonl")
+    dataset_path = Path("datasets/tools/combined_eval.jsonl")
 
 examples = []
 with open(dataset_path) as f:
