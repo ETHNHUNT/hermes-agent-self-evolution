@@ -1,0 +1,132 @@
+{"task_description": "Find all Python files that import the 'os' module in this project", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Search for the string 'TODO' across all files in the repository", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Locate all files containing the word 'deprecated' in the src directory", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Find every file that references 'MAX_RETRIES' in the codebase", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Search for function definitions of 'handle_error' across all Python files", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Find all JSON files that contain a 'version' field", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Which files mention 'GEPA' in the hermes-agent-self-evolution repo?", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Search for 'console.print' in all Python files", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Grep for 'import json' in all .py files", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use grep to find 'TODO' in Python files", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run grep -r 'deprecated' in the project", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Find all occurrences of 'config' using grep", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Search the codebase for 'raise Exception' with grep", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Show me the contents of README.md", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read the first 50 lines of evolution/core/config.py", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Display lines 100-150 of the main config file", "correct_tool": "read_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "What's in the .env file in the project root?", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read the PLAN.md file", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Show me the imports at the top of evolve_tool_descriptions.py", "correct_tool": "read_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Cat the contents of README.md", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'cat config.py' to see the file", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use head -20 to show the start of the file", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Display the file using terminal cat command", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Pipe the file contents through cat", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Find the line that has 'def main' in app.py", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Look for the API key in config.yaml", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Show me where MAX_LIMIT is set in the config", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Create a new file called output.txt with the results", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Write the generated report to report.md", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Save the JSON results to output/data.json", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Create a new Python script at scripts/analyze.py", "correct_tool": "write_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Write a summary of findings to SUMMARY.md", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Echo the results into a file called output.txt", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'echo > file.txt' to create the output", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Redirect output to a file using tee", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Append text to a file using >>", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use printf to write content to a file", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Fix the typo in line 42 of config.py: 'teh' should be 'the'", "correct_tool": "patch", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Update the version number in setup.py from 1.0 to 2.0", "correct_tool": "patch", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Replace 'localhost' with '127.0.0.1' in the config file", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Remove the debug print statement from line 156", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Change the function signature to add a new parameter", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read the file and tell me what to change on line 42", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Show me the current value of the version field", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Find the line with the typo so I can fix it", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Overwrite the entire config file with the corrected version", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Rewrite the whole file with the fix applied", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Save a new version of the file with changes", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run pytest to execute the test suite", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'git status' to check the repository state", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'npm install' to install dependencies", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Start the development server with 'python -m http.server'", "correct_tool": "terminal", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run the build script: 'make build'", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'docker ps' to list running containers", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'ls -la' to list all files with details", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Check the Python version with 'python --version'", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'grep -r TODO .' to find all TODOs", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use find to locate all .py files", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Execute 'find . -name *.json' to find JSON files", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'echo hello > file.txt' to create a file", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'cat > file.txt << EOF' to write content", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Pipe output to a file with 'cmd > output.txt'", "correct_tool": "write_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Check if the background server process is still running", "correct_tool": "process", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Wait for the build process to complete and show output", "correct_tool": "process", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Kill the background process with ID 12345", "correct_tool": "process", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "List all background processes", "correct_tool": "process", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Poll the long-running task and report progress", "correct_tool": "process", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'ps aux' to see running processes", "correct_tool": "process", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Execute 'kill -9 12345' to stop a process", "correct_tool": "process", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'top' to monitor system processes", "correct_tool": "process", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'bg' to background a task", "correct_tool": "process", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "What's the difference between search_files and grep?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Explain how the patch tool works", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "What tools are available for file operations?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Should I use read_file or terminal(cat) for small files?", "correct_tool": "NO_TOOL", "difficulty": "medium", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "List all the tools you have", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "What's the weather like today?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Tell me a joke", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "What's 2 + 2?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Explain what GEPA optimization does", "correct_tool": "NO_TOOL", "difficulty": "medium", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "How do I install Python packages?", "correct_tool": "NO_TOOL", "difficulty": "medium", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Find all test files in the project", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Locate every file that imports 'dspy'", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Search for 'TODO' or 'FIXME' comments in all source files", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Find all YAML files in the project", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Which files contain 'EvolutionConfig'?", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Search for 'batch_runner' across the codebase", "correct_tool": "search_files", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Find all files with 'import os' in the src directory", "correct_tool": "search_files", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read the pyproject.toml to see dependencies", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Show me the contents of the test file for config", "correct_tool": "read_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read lines 1-30 of the main entry point", "correct_tool": "read_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "What does the .gitignore file contain?", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Read the evolution/core/fitness.py file", "correct_tool": "read_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Show me the last 20 lines of the log file", "correct_tool": "read_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Create a new .env file with default settings", "correct_tool": "write_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Write the test results to results.json", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Save the configuration to config.yaml", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Create a new directory structure and placeholder files", "correct_tool": "write_file", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Write a Python script that prints Hello World to hello.py", "correct_tool": "write_file", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Fix the indentation error on line 23 of utils.py", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Update the timeout value from 30 to 60 in config.py", "correct_tool": "patch", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Rename the function 'old_name' to 'new_name' in the file", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Add a missing import statement at the top of the file", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Remove the commented-out code block from lines 45-50", "correct_tool": "patch", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'git log --oneline -10' to see recent commits", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'pip list' to see installed packages", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run the linter: 'ruff check .'", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'chmod +x script.sh' to make it executable", "correct_tool": "terminal", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'git diff' to see uncommitted changes", "correct_tool": "terminal", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'python -m pytest tests/ -v' to run tests with verbose output", "correct_tool": "terminal", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Run 'curl https://api.example.com/health' to check API status", "correct_tool": "terminal", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Execute 'tar -xzf archive.tar.gz' to extract files", "correct_tool": "terminal", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Show me the output of the background training job", "correct_tool": "process", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Wait for the deployment to finish and show the result", "correct_tool": "process", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Check the status of all my background tasks", "correct_tool": "process", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Kill the stuck build process", "correct_tool": "process", "difficulty": "easy", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Monitor the progress of the data processing job", "correct_tool": "process", "difficulty": "medium", "category": "synthetic_positive", "source": "handcrafted"}
+{"task_description": "Use find to locate all .json files in the project", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'wc -l' to count lines in all Python files", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'tail -f' to watch a log file in real time", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Cat the error log to see what went wrong", "correct_tool": "read_file", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use sed to replace a string in a file", "correct_tool": "patch", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'awk' to extract the second column from a CSV", "correct_tool": "terminal", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'curl' to download a file from the internet", "correct_tool": "terminal", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Run 'jq' to parse a JSON file", "correct_tool": "terminal", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Use 'xargs' to process a list of files", "correct_tool": "terminal", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "Pipe the output of find into grep", "correct_tool": "search_files", "difficulty": "hard", "category": "confusion", "source": "handcrafted"}
+{"task_description": "What's the difference between write_file and patch?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "When should I use terminal vs process?", "correct_tool": "NO_TOOL", "difficulty": "medium", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Can you help me understand this error message: 'SyntaxError: invalid syntax'?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "What's your favorite programming language?", "correct_tool": "NO_TOOL", "difficulty": "easy", "category": "no_tool", "source": "handcrafted"}
+{"task_description": "Summarize the git workflow", "correct_tool": "NO_TOOL", "difficulty": "medium", "category": "no_tool", "source": "handcrafted"}

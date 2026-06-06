@@ -9,15 +9,23 @@ build/
 .venv/
 venv/
 .env
+.DS_Store
 
-# Generated eval datasets (local, not shared)
+# Generated eval datasets — ignore by default
 datasets/**/*.jsonl
 datasets/**/*.json
-!datasets/.gitkeep
+# But allow curated/committed eval datasets
+!datasets/tools/devtools_v1.jsonl
+!datasets/prompts/*_eval.jsonl
 
-# Evolution snapshots
+# Evolution output (generated at runtime, not committed)
+output/
+datasets_output/
 snapshots/
 *.pkl
+
+# Autoresearch results (generated at runtime)
+autoresearch/**/results.json
 
 # IDE
 .idea/
