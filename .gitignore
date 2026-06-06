@@ -16,6 +16,7 @@ datasets/**/*.jsonl
 datasets/**/*.json
 # But allow curated/committed eval datasets
 !datasets/tools/devtools_v1.jsonl
+!datasets/tools/combined_eval.jsonl
 !datasets/prompts/*_eval.jsonl
 
 # Evolution output (generated at runtime, not committed)

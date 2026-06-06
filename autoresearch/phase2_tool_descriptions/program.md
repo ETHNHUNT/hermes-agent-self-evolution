@@ -5,7 +5,7 @@ Optimize the natural language descriptions of tools in the `hermes-agent` reposi
 ---
 
 ## Objective
-Maximize tool selection accuracy on the devtools dataset.
+Maximize tool selection accuracy on the combined evaluation dataset (341 examples from handcrafted + synthetic sources).
 
 ## Target Metric
 - **primary_metric**: `accuracy` (percentage of correct tool selections).
@@ -14,7 +14,7 @@ Maximize tool selection accuracy on the devtools dataset.
 ## Workspace Configuration
 - **Modifiable Files**: Python tool definition files inside the `hermes-agent` tools directory: `/Users/vipinnandal/.hermes/hermes-agent/tools/` (e.g. `file_tools.py`, `terminal_tool.py`, etc.). Only edit the string literal descriptions inside the tool schemas/constants. Do NOT modify tool schemas, parameters, types, or functional code.
 - **Read-Only Files**: 
-  - Evaluation dataset: `datasets/tools/devtools_v1.jsonl`
+  - Evaluation dataset: `datasets/tools/combined_eval.jsonl`
   - Evaluation script: `autoresearch/phase2_tool_descriptions/evaluate.py`
 
 ## How to Evaluate
@@ -23,7 +23,7 @@ Run the following command in the `hermes-agent-self-evolution` directory:
 python autoresearch/phase2_tool_descriptions/evaluate.py
 ```
 
-This script will run the devtools dataset through the tool selector model and print the overall accuracy. It also writes the results and failures details to:
+This script will run the combined evaluation dataset (341 examples) through the tool selector model and print the overall accuracy. It also writes the results and failures details to:
 `autoresearch/phase2_tool_descriptions/results.json`
 
 ## Research loop (Step-by-Step)

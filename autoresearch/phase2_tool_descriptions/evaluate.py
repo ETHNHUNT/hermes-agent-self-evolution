@@ -18,7 +18,7 @@ if not api_key:
 
 BASE_URL = "https://opencode.ai/zen/v1"
 MODEL = "minimax-m3-free"
-DATASET_PATH = Path("datasets/tools/devtools_v1.jsonl")
+DATASET_PATH = Path("datasets/tools/combined_eval.jsonl")
 
 # Add parent directory to path to import evolution modules
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
